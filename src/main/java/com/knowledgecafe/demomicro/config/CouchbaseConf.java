@@ -8,7 +8,7 @@ import org.springframework.data.couchbase.repository.config.EnableCouchbaseRepos
 
 @Configuration
 @RefreshScope
-@EnableCouchbaseRepositories(basePackages = {"com.knowledgecafe.demomicro.model"})
+@EnableCouchbaseRepositories(basePackages = {"com.knowledgecafe.demomicro.repositories"})
 public class CouchbaseConf extends AbstractCouchbaseConfiguration {
 
     @Value("${db.couchbase.username}")
