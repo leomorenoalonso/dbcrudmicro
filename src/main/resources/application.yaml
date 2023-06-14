@@ -16,4 +16,3 @@ db:
   couchbase:
     username: ${CB_USERNAME}
     password: ${CB_PASSWORD}
-    ip: ${db.couchbase.ip}
