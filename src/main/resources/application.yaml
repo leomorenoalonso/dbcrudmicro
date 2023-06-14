@@ -7,8 +7,12 @@ spring:
     kubernetes:
       reload:
         enabled: true
+        monitoring-config-maps: true
+        strategy: refresh
+        mode: event
       config:
         enabled: true
+        name: dbcrudmicro
 db:
   couchbase:
     username: ${CB_USERNAME}
