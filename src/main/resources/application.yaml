@@ -3,8 +3,6 @@ server:
 spring:
   application:
     name: dbcrudmicro
-#  main:
-#    allow-bean-definition-overriding: true
   cloud:
     kubernetes:
       reload:
@@ -13,9 +11,9 @@ spring:
         strategy: refresh
         mode: event
       config:
-        enabled: true
         name: dbcrudmicro
 db:
   couchbase:
     username: ${CB_USERNAME}
     password: ${CB_PASSWORD}
+    ip: ${db.couchbase.ip}
