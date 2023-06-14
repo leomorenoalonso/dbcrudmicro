@@ -7,7 +7,7 @@ import org.springframework.data.couchbase.config.AbstractCouchbaseConfiguration;
 import org.springframework.data.couchbase.repository.config.EnableCouchbaseRepositories;
 
 @Configuration
-@RefreshScope
+//@RefreshScope
 @EnableCouchbaseRepositories(basePackages = {"com.knowledgecafe.demomicro.model"})
 public class CouchbaseConf extends AbstractCouchbaseConfiguration {
 
